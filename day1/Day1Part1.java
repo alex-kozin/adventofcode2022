@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Day1 {
+public class Day1Part1 {
   public static void main(String[] args) {
     try {
       File input = new File("day1/input.txt");
@@ -17,7 +17,7 @@ public class Day1 {
           currentMax = 0;
         }
         else {
-          currentMax += Integer.parseInt(data);
+          currentMax += Long.parseLong(data);
         }
       }
       inputReader.close();
